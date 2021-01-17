@@ -31,4 +31,5 @@ One of the projects in the course is a chat app. This repository contains that c
 
 # References
 
+- Tutorial: [Use ASP.NET Core SignalR with a hosted Blazor WebAssembly app](https://docs.microsoft.com/en-us/aspnet/core/tutorials/signalr-blazor-webassembly?view=aspnetcore-5.0&tabs=visual-studio)
 - [Microsoft Blazor](https://www.apress.com/us/book/9781484259276) (Apress 2020) by Peter Himschoot.
