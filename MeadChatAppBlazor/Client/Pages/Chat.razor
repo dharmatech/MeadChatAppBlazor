@@ -1,0 +1,89 @@
+﻿@page "/chat"
+
+@using Microsoft.AspNetCore.SignalR.Client 
+@using Microsoft.AspNetCore.WebUtilities  
+@using MeadChatAppBlazor.Shared 
+
+@layout MainLayout
+
+@inject NavigationManager NavigationManager
+
+@code {
+
+}
+
+<div class="chat">
+
+    <div id="sidebar" class="sidebar">
+
+        @if (room_data != null)
+        {
+            <h2 class="room-title">@room_data.Room</h2>
+
+            <h3 class="list-title">Users</h3>
+
+            <ul class="users">
+                @foreach (var user in room_data.Users)
+                {
+                    <li>
+                        @user.Name
+                    </li>
+                }
+            </ul>
+        }
+
+    </div>
+
+    <div class="main">
+
+        <div id="messages" class="messages">
+
+            @foreach (var message in messages)
+            {
+                @if (message.Location)
+                {
+                    <div class="message">
+                        <p>
+                            <span class="message__name">@message.User</span>
+                            <span class="message__meta">@message.CreatedAt</span>
+                        </p>
+                        <p>
+                            <a href="@message.Text" target="_blank">
+                                location
+                            </a>
+                        </p>
+                    </div>
+                }
+                else
+                {
+                    <div class="message">
+                        <p>
+                            <span class="message__name">@message.User</span>
+                            <span class="message__meta">@message.CreatedAt</span>
+                        </p>
+                        <p>@message.Text</p>
+                    </div>
+                }
+            }
+
+        </div>
+
+        <div class="compose">
+
+            <form id="message-form">
+                <input @bind="message_input" name="message" placeholder="Message" required autocomplete="off" />
+                <button @onclick="SendMessage" @onclick:preventDefault="true">
+                    Send
+                </button>
+            </form>
+
+            <button id="send-location" @onclick="SendLocation">
+                Send location
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+

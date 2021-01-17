@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeadChatAppBlazor.Server", "MeadChatAppBlazor\Server\MeadChatAppBlazor.Server.csproj", "{214CC5EF-C4A8-4BDB-9539-A436D515F385}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeadChatAppBlazor.Client", "MeadChatAppBlazor\Client\MeadChatAppBlazor.Client.csproj", "{02133376-2FA7-4530-AF57-05727A306724}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeadChatAppBlazor.Shared", "MeadChatAppBlazor\Shared\MeadChatAppBlazor.Shared.csproj", "{D1DF4A61-0118-47CE-BA84-5D9E5DA62B09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{214CC5EF-C4A8-4BDB-9539-A436D515F385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214CC5EF-C4A8-4BDB-9539-A436D515F385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214CC5EF-C4A8-4BDB-9539-A436D515F385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214CC5EF-C4A8-4BDB-9539-A436D515F385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02133376-2FA7-4530-AF57-05727A306724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02133376-2FA7-4530-AF57-05727A306724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02133376-2FA7-4530-AF57-05727A306724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02133376-2FA7-4530-AF57-05727A306724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1DF4A61-0118-47CE-BA84-5D9E5DA62B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1DF4A61-0118-47CE-BA84-5D9E5DA62B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1DF4A61-0118-47CE-BA84-5D9E5DA62B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1DF4A61-0118-47CE-BA84-5D9E5DA62B09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6940C926-3B04-481D-9060-C787BA01EC94}
+	EndGlobalSection
+EndGlobal
