@@ -8,4 +8,4 @@ One of the projects in the course is a chat app. This repository contains that c
 
 # What does the chat app look like?
 
-<img src="https://i.imgur.com/q4gG6S8.png" width="500">
+<img src="https://i.imgur.com/Nq3xw8c.png" width="500">
